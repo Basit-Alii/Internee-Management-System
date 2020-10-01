@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+
+        android:padding="10dp"
+        app:cardBackgroundColor="#fafc"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/n"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Name:"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/vn"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimaryDark"
+                app:layout_constraintEnd_toEndOf="@id/tvname"
+                app:layout_constraintStart_toStartOf="@+id/tvname"
+                app:layout_constraintTop_toBottomOf="@id/tvname" />
+
+            <TextView
+                android:id="@+id/tvname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textStyle="italic|bold"
+                app:layout_constraintStart_toEndOf="@id/n"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/fn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="10dp"
+                android:text="Father Name:"
+                android:textSize="20sp"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/n" />
+
+            <View
+                android:id="@+id/vfn"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimaryDark"
+                app:layout_constraintEnd_toEndOf="@id/tvfathername"
+                app:layout_constraintStart_toStartOf="@id/tvfathername"
+                app:layout_constraintTop_toBottomOf="@id/tvfathername" />
+
+            <TextView
+                android:id="@+id/tvfathername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:layout_marginLeft="36dp"
+
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@id/fn"
+                app:layout_constraintTop_toBottomOf="@id/tvname" />
+
+            <TextView
+                android:id="@+id/dob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="10dp"
+                android:text="Date of Birth:"
+                android:textSize="20sp"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fn" />
+
+            <View
+                android:id="@+id/vdob"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimaryDark"
+                app:layout_constraintEnd_toEndOf="@id/tvdob"
+                app:layout_constraintStart_toStartOf="@id/tvdob"
+                app:layout_constraintTop_toBottomOf="@id/tvdob" />
+
+            <TextView
+                android:id="@+id/tvdob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@id/dob"
+                app:layout_constraintTop_toBottomOf="@id/tvfathername" />
+
+            <TextView
+                android:id="@+id/e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="10dp"
+                android:text="Email:"
+                android:textSize="20sp"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dob" />
+
+            <View
+                android:id="@+id/ve"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimaryDark"
+                app:layout_constraintEnd_toEndOf="@id/tvemail"
+                app:layout_constraintStart_toStartOf="@id/tvemail"
+                app:layout_constraintTop_toBottomOf="@id/tvemail" />
+
+            <TextView
+                android:id="@+id/tvemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginLeft="100dp"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@id/e"
+                app:layout_constraintTop_toBottomOf="@id/tvdob" />
+
+            <TextView
+                android:id="@+id/p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="10dp"
+                android:text="Pasword:"
+                android:textSize="20sp"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/e" />
+
+            <View
+                android:id="@+id/vp"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimaryDark"
+                app:layout_constraintEnd_toEndOf="@id/tvpassword"
+                app:layout_constraintStart_toStartOf="@id/tvpassword"
+                app:layout_constraintTop_toBottomOf="@id/tvpassword" />
+
+            <TextView
+                android:id="@+id/tvpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="72dp"
+                android:layout_marginLeft="72dp"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@id/p"
+                app:layout_constraintTop_toBottomOf="@id/tvemail" />
+            <Button
+                android:id="@+id/btnupdate"
+                android:onClick="update"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="UPDATE"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="100dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="10dp"/>
+            <Button
+                android:id="@+id/btndelete"
+                android:onClick="delete"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Delete"
+                android:textSize="10sp"
+                app:layout_constraintStart_toEndOf="@id/btnupdate"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="10dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
